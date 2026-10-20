@@ -81,12 +81,12 @@
        <h3 id="Introduction">Introduction</h3> 
       <pre id="Introduction_InText">
           This paragraph is where my introduction paragraph will go. This will highlight the most interesting points of my topic, while also giving a brief overvview of my article.
-        </pre>
+      </pre>
     </p>
 
       <p class="ex1">
         <h3 id="Analysis and discussion">Analysis and discussion</h3>
-        <pre id="Analysis_InText">
+        <pre id="Analysis and discussion_InText">
           This  paragraph will be my analysis and discussion paragraph, where i analyse and discuss my topic.
         </pre>
     </p>
@@ -170,9 +170,9 @@
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
+    const AnalysisanddiscussionCount = displayWordCount("Analysis and discussion_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + AnalysanddiscussionisCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
