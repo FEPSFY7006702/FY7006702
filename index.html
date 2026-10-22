@@ -153,7 +153,9 @@
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
 <!-- Placeholder for total word count -->
 <p id="totalWordCount"></p>
-<hr>
+
+  <hr>
+
 <script>
   // Function to calculate and display word count for a specified section
   function displayWordCount(sectionId, outputId) {
@@ -172,7 +174,7 @@
     const IntroductionCount = displayWordCount("Introduction_InText");
     const AnalysisanddiscussionCount = displayWordCount("Analysis and discussion_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + AnalysisanddiscussionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
