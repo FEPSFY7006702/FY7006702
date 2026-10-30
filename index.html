@@ -98,6 +98,332 @@
           This will be where all my references go (should be linked to thee references within my text).
         </pre>
     </p>
+
+
+      
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Evolution of Mechanical Ventilators</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: Arial, sans-serif;
+      background: #f3f6fb;
+      color: #14243d;
+    }
+
+    .carousel-section {
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .carousel-section h1 {
+      color: #124b83;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #607086;
+      margin-bottom: 30px;
+    }
+
+    .carousel {
+      position: relative;
+      max-width: 760px;
+      margin: auto;
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 28px rgba(20, 50, 80, 0.12);
+    }
+
+    .slide img {
+      display: block;
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      background: #dce6f0;
+    }
+
+    .slide-content {
+      padding: 24px 60px 30px;
+      min-height: 175px;
+    }
+
+    .era {
+      color: #1686c9;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.85rem;
+    }
+
+    .slide-content h2 {
+      margin: 10px 0;
+      font-size: 1.6rem;
+    }
+
+    .slide-content p {
+      color: #56657a;
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    /* Previous and next arrows */
+    .arrow {
+      position: absolute;
+      top: 190px;
+      transform: translateY(-50%);
+      width: 46px;
+      height: 46px;
+      border: none;
+      border-radius: 50%;
+      background: white;
+      color: #1268ad;
+      font-size: 28px;
+      cursor: pointer;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      transition: background 0.2s, color 0.2s;
+      z-index: 2;
+    }
+
+    .arrow:hover {
+      background: #1268ad;
+      color: white;
+    }
+
+    .arrow:focus-visible,
+    .dot:focus-visible {
+      outline: 3px solid #1686c9;
+      outline-offset: 3px;
+    }
+
+    .prev {
+      left: 15px;
+    }
+
+    .next {
+      right: 15px;
+    }
+
+    /* Dots beneath the picture */
+    .dots {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 18px;
+    }
+
+    .dot {
+      width: 11px;
+      height: 11px;
+      border: none;
+      border-radius: 50%;
+      background: #c4d1df;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .dot.active {
+      background: #1686c9;
+      transform: scale(1.25);
+    }
+
+    .counter {
+      color: #607086;
+      font-size: 0.9rem;
+      padding-bottom: 20px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 25px 12px;
+      }
+
+      .slide img {
+        height: 250px;
+      }
+
+      .arrow {
+        top: 125px;
+        width: 40px;
+        height: 40px;
+      }
+
+      .slide-content {
+        padding: 20px 28px 25px;
+      }
+
+      .slide-content h2 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="carousel-section">
+    <h1>The Evolution of Mechanical Ventilators</h1>
+    <p class="subtitle">
+      Discover how breathing support technology has developed over time.
+    </p>
+
+    <div class="carousel" aria-label="Ventilator history carousel">
+
+      <!-- Slide 1 -->
+      <div class="slide">
+        <img
+          src="https://placehold.co/760x380/e0e5e9/263746?text=Early+Iron+Lung"
+          alt="Placeholder for a historical iron lung photograph">
+        <div class="slide-content">
+          <span class="era">1920s–1950s</span>
+          <h2>The Iron Lung</h2>
+          <p>
+            The iron lung used negative pressure around the body
+            to help patients breathe, becoming especially important
+            during polio epidemics.
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide" hidden>
+        <img
+          src="https://placehold.co/760x380/dce8f3/263746?text=Positive+Pressure"
+          alt="Placeholder for an early positive-pressure ventilator">
+        <div class="slide-content">
+          <span class="era">1950s</span>
+          <h2>Positive-Pressure Ventilation</h2>
+          <p>
+            Positive-pressure machines pushed air into the lungs
+            and became increasingly important in operating theatres
+            and intensive care.
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide" hidden>
+        <img
+          src="https://placehold.co/760x380/d8e7ec/263746?text=Volume+Controlled"
+          alt="Placeholder for a volume-controlled ventilator">
+        <div class="slide-content">
+          <span class="era">1960s–1970s</span>
+          <h2>Volume-Controlled Ventilators</h2>
+          <p>
+            Advances in ventilator design allowed clinicians
+            to control delivered breath volumes more precisely.
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slide" hidden>
+        <img
+          src="https://placehold.co/760x380/dce5f5/263746?text=Microprocessor+Era"
+          alt="Placeholder for a microprocessor-controlled ventilator">
+        <div class="slide-content">
+          <span class="era">1980s–1990s</span>
+          <h2>The Microprocessor Era</h2>
+          <p>
+            Electronic controls, improved monitoring and alarms
+            made ventilators more adaptable and easier to monitor.
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="slide" hidden>
+        <img
+          src="https://placehold.co/760x380/d8e9f5/263746?text=Modern+Ventilator"
+          alt="Placeholder for a modern intensive care ventilator">
+        <div class="slide-content">
+          <span class="era">2000s–Today</span>
+          <h2>Modern Ventilators</h2>
+          <p>
+            Modern machines offer multiple ventilation modes,
+            sophisticated sensors and detailed displays to support
+            clinical decision-making.
+          </p>
+        </div>
+      </div>
+
+      <!-- Navigation arrows -->
+      <button class="arrow prev" onclick="changeSlide(-1)"
+        aria-label="Previous ventilator">&#10094;</button>
+
+      <button class="arrow next" onclick="changeSlide(1)"
+        aria-label="Next ventilator">&#10095;</button>
+
+      <!-- Navigation dots -->
+      <div class="dots" aria-label="Choose a historical period">
+        <button class="dot active" onclick="goToSlide(0)"
+          aria-label="Go to slide 1" aria-current="true"></button>
+        <button class="dot" onclick="goToSlide(1)"
+          aria-label="Go to slide 2"></button>
+        <button class="dot" onclick="goToSlide(2)"
+          aria-label="Go to slide 3"></button>
+        <button class="dot" onclick="goToSlide(3)"
+          aria-label="Go to slide 4"></button>
+        <button class="dot" onclick="goToSlide(4)"
+          aria-label="Go to slide 5"></button>
+      </div>
+
+      <div class="counter" aria-live="polite">
+        <span id="currentSlide">1</span> of 5
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    let currentIndex = 0;
+
+    const slides = document.querySelectorAll(".slide");
+    const dots = document.querySelectorAll(".dot");
+    const counter = document.getElementById("currentSlide");
+
+    function showSlide(index) {
+      // Wrap around when reaching either end
+      currentIndex = (index + slides.length) % slides.length;
+
+      slides.forEach((slide, i) => {
+        slide.hidden = i !== currentIndex;
+      });
+
+      dots.forEach((dot, i) => {
+        dot.classList.toggle("active", i === currentIndex);
+
+        if (i === currentIndex) {
+          dot.setAttribute("aria-current", "true");
+        } else {
+          dot.removeAttribute("aria-current");
+        }
+      });
+
+      counter.textContent = currentIndex + 1;
+    }
+
+    function changeSlide(direction) {
+      showSlide(currentIndex + direction);
+    }
+
+    function goToSlide(index) {
+      showSlide(index);
+    }
+  </script>
+
+</body>
+
    
     </body>
 
